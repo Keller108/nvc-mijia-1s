@@ -11,7 +11,7 @@
 }
 
 .container {
-    max-width: 1650px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -24,31 +24,31 @@
     justify-content: flex-start;
     text-align: center;
     padding: 0 50px;
-    padding-top: 135px;
-    max-height: 750px;
+    padding-top: 100px;
+    max-height: 650px;
     width: 100%;
     color: #242424;
     background-color: #E1E2E4;
 }
 
 .details__header-block-title {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
     color: #F76400;
-    line-height: 52px;
-    max-width: 860px;
+    line-height: 1.5;
+    max-width: 680px;
 }
 
 .details__header-block-description {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
-    max-width: 860px;
+    max-width: 680px;
 }
 
 .details__header-block-list-wrapper {
@@ -59,15 +59,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 680px;
     padding: 0;
     margin: 0;
-    list-style-type: none;
+    list-style-type: circe solid;
 }
 
 .details__header-block-list {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -75,8 +75,8 @@
 
 .details__header-block-mijia-1s-image {
     object-fit: cover;
-    width: 600px;
-    height: 600px;
+    width: 80%;
+    height: auto;
 }
 
 .details__block-double-navigation {
@@ -86,8 +86,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 200px;
-    width: 100%;
+    padding-top: 170px;
+    width: 800px;
     height: 750px;
     background-image: url("./images/details__block_new_image.jpg");
     background-size: cover;
@@ -97,7 +97,7 @@
 }
 
 .details__china-block-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.2;
     color: #F76400;
@@ -107,20 +107,34 @@
     max-width: 800px;
 }
 
+.details__china-block-title_clr_white {
+    width: 600px;
+    color: white;
+}
+
+.details__china-block-title_clr_black {
+    color: black;
+}
+
 .details__china-block-description {
     font-size: 20px;
     font-weight: normal;
     line-height: 1.55;
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
     max-width: 800px;
 }
 
-.details__advantages-icons-block {
+.details__china-block-description:only-of-type {
+    margin-bottom: 0;
+}
+
+.details__china-advantages-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #1A1E2A;
@@ -129,20 +143,20 @@
     margin: 0;
 }
 
-.details__advantages-icons-list-wrapper {
+.details__china-advantages-list-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 100%;
     list-style-type: none;
     padding: 0 40px;
     margin: 0;
     box-sizing: border-box;
 }
 
-.details__advantages-icons-list {
+.details__china-advantages-icons-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -155,19 +169,19 @@
     box-sizing: border-box;
 }
 
-.details__advantages-icons-list:nth-child(2) {
+.details__china-advantages-icons-list:nth-child(2) {
     margin: 0 20px;
 }
 
-.details__advantages-icon-box {
-    width: 100px;
-    height: 100px;
+.details__china-advantages-icon-box {
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     object-position: center;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
-.details__advantages-icons-text-wrapper {
+.details__china-advantages-icons-text-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -176,7 +190,7 @@
     justify-content: flex-start;
 }
 
-.details__advantages-icons-title {
+.details__china-advantages-icons-title {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.5;
@@ -186,7 +200,7 @@
     margin-bottom: 10px;
 }
 
-.details__advantages-icons-subtitle {
+.details__china-advantages-icons-subtitle {
     font-size: 12px;
     line-height: 1.5;
     font-weight: normal;
@@ -196,7 +210,7 @@
     margin-bottom: 15px;
 }
 
-.details__advantages-icons-text {
+.details__china-advantages-icons-text {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -205,13 +219,12 @@
     padding: 0;
 }
 
-.details__advantages-icons-text:last-of-type {
+.details__china-advantages-icons-text:last-of-type {
     margin-bottom: 0;
 }
 
 .details__text-cover-block {
     width: 100%;
-    height: 440px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -224,12 +237,12 @@
     background-repeat: no-repeat;
     text-align: center;
     color: white;
+    padding: 50px 0;
 }
 
 .details__text-cover-title {
-    max-width: 950px;
-    font-size: 48px;
-    line-height: 52px;
+    width: 80%;
+    font-size: 28px;
     line-height: 1.4;
     font-weight: bold;
     padding: 0;
@@ -291,22 +304,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 570px;
-    padding: 45px 65px;
+    padding: 30px 65px;
     margin: 0;
     box-sizing: border-box;
-    background-color: white;
     color: #242424;
-    border-radius: 8px;
-}
-
-.details__icons-pan-list:nth-of-type(2) {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.details__icons-pan-list:hover {
-    background-color: #1A1E2A;
-    color: white;
 }
 
 .details__icons-pan-image {
@@ -345,7 +346,7 @@
     padding: 0;
 }
 
-.details__double-title-block {
+.details__china-regular-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,7 +356,7 @@
     box-sizing: border-box;
     text-align: center;
     color: #242424;
-    padding: 75px 0;
+    padding: 50px 0 25px 0;
 }
 
 .details__double-title-image {
@@ -363,7 +364,141 @@
     height: 385px;
     object-fit: contain;
     object-position: center;
-    margin: 50px 0;
+    margin: 15px;
+}
+
+.details__regular-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.details__regular-section_clr_grey {
+    background: #e9e9eb;
+    padding: 75px 100px 25px 100px;
+}
+
+.details__regular-section_clr_greyer {
+    background: #dadee1;
+    padding: 75px 100px 25px 100px;
+    text-align: left;
+}
+
+.details__regular-section_clr_purple {
+    background: #C8C8D0;
+    padding: 75px 100px 0 100px;
+    text-align: left;
+}
+
+.details__regular-section-text-wrap {
+    padding: 75px;
+    color: #242424;
+}
+
+.details__regular-section-text-wrap_clr_dark {
+    background: #1A1E2A;
+    color: #fff;
+}
+
+.details__regular-section-text-wrap_clr_black {
+    padding-top: 50px;
+    padding-bottom: 0;
+    text-align: left;
+    background: #000;
+    color: #fff;
+}
+
+.details__regular-section-text-wrap_clr_dark-grey {
+    color: white;
+    background: #1a1b20;
+}
+
+.details__mijia-1s-dark-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.details__regular-section-row-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #e9e9eb;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.details__regular-section-row-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: #242424;
+    border-radius: 8px solid grey;
+}
+
+.details__regular-section-row-title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #F76400;
+    font-weight: bold;
+}
+
+.details__regular-section-row-text {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.details__room-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.details__china-text-list {
+    width: 560px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #F76400;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.details__china-text-list-item {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #242424;
+}
+
+.mb30p {
+    margin-bottom: 30px;
+}
+
+.centered {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
