@@ -87,7 +87,7 @@
 }
 
 .pt100p {
-    padding-top: 200px !important;
+    padding-top: 100px !important;
 }
 
 .mb30p {
@@ -267,13 +267,6 @@
     color: #242424;
 }
 
-.details__efficiency-picture {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-    object-position: center;
-}
-
 .details__icons-pan-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,7 +394,7 @@
 }
 
 .details__china-regular-section-text-wrap {
-    padding: 75px;
+    padding: 50px;
     color: #242424;
     text-align: left;
 }
@@ -472,11 +465,6 @@
     font-size: 12px;
     line-height: 1.5;
     font-weight: normal;
-}
-
-.details__room-image {
-    object-fit: cover;
-    object-position: center;
 }
 
 .details__china-text-list {
